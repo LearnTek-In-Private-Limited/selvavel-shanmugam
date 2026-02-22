@@ -1,0 +1,40 @@
+/* Success Dashboard Styling */
+.success-dashboard {
+  padding: 30px 0;
+}
+
+.card {
+  margin: 15px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+.success-dashboard .card {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.success-dashboard .card-body {
+  padding: 20px;
+}
+
+.success-dashboard .card-body h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.success-dashboard .card-body p {
+  font-size: 1.2rem;
+}
+
+/* Dark Mode Specific Cards */
+.success-dashboard .card.dark-card {
+  background-color: #333;
+  color: white;
+  border: 1px solid #444;
+}
+
+.success-dashboard .card.light-card {
+  background-color: white;
+  color: black;
+  border: 1px solid #ddd;
+}

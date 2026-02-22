@@ -1,0 +1,131 @@
+.services-page-section {
+  padding: 4rem 4vw;
+  min-height: 80vh;
+}
+
+.services-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.service-card {
+  text-align: left;
+}
+
+.service-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #070f79, #f57c00);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  transition: all 300ms ease;
+}
+
+.service-card:hover .service-icon {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(7, 15, 121, 0.25);
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0b0449;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #595769;
+}
+
+.services-footer {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(7, 15, 121, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.services-cta-text {
+  font-size: 1.1rem;
+  color: #595769;
+  max-width: 600px;
+}
+
+@media (max-width: 1199px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .services-page-section {
+    padding: 3rem 4vw;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .services-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-page-section {
+    padding: 2rem 5vw;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 1.6rem;
+  }
+
+  .services-cta-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-page-section {
+    padding: 1.5rem 4vw;
+  }
+
+  .services-grid {
+    gap: 1.25rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,9 @@
+.portfolio-page-section {
+  padding: 4rem 4vw;
+  min-height: 80vh;
+}
+
+.portfolio-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

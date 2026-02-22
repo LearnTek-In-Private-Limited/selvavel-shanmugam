@@ -1,0 +1,32 @@
+.resources-page-section {
+  padding: 4rem 4vw;
+  min-height: 80vh;
+}
+
+.resources-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.resource-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.resource-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f57c00;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.resource-link:hover {
+  gap: 0.75rem;
+}

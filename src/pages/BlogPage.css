@@ -1,0 +1,9 @@
+.blog-page-section {
+  padding: 4rem 4vw;
+  min-height: 80vh;
+}
+
+.blog-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

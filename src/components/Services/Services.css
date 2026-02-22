@@ -1,0 +1,138 @@
+/* Base styles for the Services Section */
+.services {
+  padding: 4rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.services-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333; /* Light mode color */
+}
+
+.services-header p {
+  font-size: 1.2rem;
+  color: #555; /* Light mode color */
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .services-header h2 {
+    font-size: 2rem;
+  }
+
+  .services-header p {
+    font-size: 1rem;
+  }
+}
+
+/* Services Container */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-adjust columns */
+  gap: 2rem;
+  justify-items: center;
+  align-items: stretch;
+  padding: 0 1rem;
+}
+
+/* Service Card */
+.service-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px; /* Restrict max width for better appearance */
+  transition: all 0.3s ease;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333; /* Light mode color */
+}
+
+.service-card p {
+  color: #777;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #00aaff;
+  margin-bottom: 1rem;
+}
+
+/* Adjusting card padding and typography for smaller screens */
+@media (max-width: 768px) {
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 480px) {
+  .services {
+    padding: 2rem 1rem;
+  }
+
+  .service-card {
+    padding: 1rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-card p {
+    font-size: 0.8rem;
+  }
+
+  .service-icon {
+    font-size: 2rem;
+  }
+}
+
+/* Dark Mode Styles */
+.services.dark {
+  background-color: #121212;
+}
+
+.services.dark .services-header h2 {
+  color: white;
+}
+
+.services.dark .services-header p {
+  color: #ccc;
+}
+
+.services.dark .service-card {
+  background-color: #1f1f1f;
+  color: white;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.services.dark .service-card h3 {
+  color: #fff;
+}
+
+.services.dark .service-card p {
+  color: #aaa;
+}
+
+.services.dark .service-icon {
+  color: #00aaff;
+}

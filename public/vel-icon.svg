@@ -1,0 +1,52 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="velGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="guardGradient" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color:#C0A000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Pommel (base circle) -->
+  <circle cx="32" cy="50" r="5" fill="#8B6914"/>
+  <circle cx="32" cy="50" r="4" fill="url(#velGradient)"/>
+
+  <!-- Shaft with decorative rings -->
+  <rect x="30" y="18" width="4" height="32" fill="#8B6914"/>
+  <rect x="29.5" y="18" width="5" height="2" fill="#DAA520"/>
+  <rect x="29.5" y="24" width="5" height="1.5" fill="#DAA520"/>
+  <rect x="29.5" y="30" width="5" height="1.5" fill="#DAA520"/>
+  <rect x="29.5" y="36" width="5" height="1.5" fill="#DAA520"/>
+  <rect x="29.5" y="42" width="5" height="1.5" fill="#DAA520"/>
+
+  <!-- Central spine of blade -->
+  <polygon points="32,6 33,18 31,18" fill="#8B6914"/>
+
+  <!-- Blade - diamond-shaped with rib -->
+  <path d="M 32 6 L 42 16 L 32 20 L 22 16 Z" fill="#D4AF37"/>
+  <path d="M 32 6 L 42 16 L 32 20 L 22 16 Z" stroke="#8B6914" stroke-width="0.5" fill="none"/>
+
+  <!-- Central rib on blade -->
+  <line x1="32" y1="6" x2="32" y2="20" stroke="#8B6914" stroke-width="0.8"/>
+
+  <!-- Left guard wing (cross-guard) -->
+  <path d="M 18 14 Q 12 16 10 18 Q 12 20 18 18 Z" fill="url(#guardGradient)"/>
+  <path d="M 18 14 Q 12 16 10 18 Q 12 20 18 18 Z" stroke="#6B5810" stroke-width="0.5" fill="none"/>
+
+  <!-- Right guard wing (cross-guard) -->
+  <path d="M 46 14 Q 52 16 54 18 Q 52 20 46 18 Z" fill="url(#guardGradient)"/>
+  <path d="M 46 14 Q 52 16 54 18 Q 52 20 46 18 Z" stroke="#6B5810" stroke-width="0.5" fill="none"/>
+
+  <!-- Blade point accent - crimson tip -->
+  <polygon points="32,6 33,8 31,8" fill="#8B0000"/>
+
+  <!-- Decorative collar at junction -->
+  <ellipse cx="32" cy="18" rx="5.5" ry="2" fill="#C0A000" opacity="0.7"/>
+
+  <!-- Shine effect on blade -->
+  <path d="M 26 12 Q 28 10 30 12" stroke="#FFE66D" stroke-width="0.7" fill="none" opacity="0.8"/>
+</svg>

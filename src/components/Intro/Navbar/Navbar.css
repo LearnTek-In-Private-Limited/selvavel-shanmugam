@@ -1,0 +1,145 @@
+.navbar {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 10vh;
+  z-index: 1000;
+}
+
+.navbar.shadow-sm {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.logo-green {
+  color: rgb(4, 96, 4);
+  font-weight: bolder;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.logo-green:hover {
+  color: #1aa81a;
+}
+
+.navbar .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-light .nav-link:hover {
+  color: #ff6600;
+  transform: translateY(-1px);
+}
+
+.navbar-dark .nav-link:hover {
+  color: #ffa64d;
+  transform: translateY(-1px);
+}
+
+.dropdown-menu {
+  
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+ 
+}
+
+.dropdown-item {
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+  color: #ff6600;
+}
+
+.dropdown-menu-dark .dropdown-item:hover {
+  background-color: #444;
+  color: #ffa64d;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem 0.75rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-light .navbar-toggler {
+  background-color: #e9ecef;
+}
+
+.navbar-dark .navbar-toggler {
+  background-color: #555;
+}
+
+/* Mobile collapse */
+@media (max-width: 992px) {
+  .navbar-collapse.mobile-collapse {
+    padding: 1rem;
+  }
+
+  .mobile-collapse.mobile-dark {
+    background-color: #222;
+  }
+
+  .mobile-collapse.mobile-dark .nav-link,
+  .mobile-collapse.mobile-dark .dropdown-item {
+    color: #fff;
+  }
+
+  .mobile-collapse.mobile-light {
+    background-color: #fff;
+  }
+
+  .mobile-collapse.mobile-light .nav-link,
+  .mobile-collapse.mobile-light .dropdown-item {
+    color: #000;
+  }
+
+  .mobile-collapse .nav-link,
+  .mobile-collapse .dropdown-item {
+    width: 100%;
+    margin: 0.25rem 0;
+    text-align: center;
+  }
+}
+
+/* Scroll-to-top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  background: #0d6efd;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+  background: #0056b3;
+}
+@media (max-width: 480px) {
+  .logo-green{
+    font-size: 20px;
+  }
+}

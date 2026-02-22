@@ -1,0 +1,143 @@
+/* ═══════════════════════════════════════════════════════════════
+   Responsive Grid Sizing for All Devices
+   ═══════════════════════════════════════════════════════════════ */
+
+/* 3-Column Grid (Services, Portfolio, Blog) */
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+/* 2-Column Grid (Portfolio Projects, Blog Posts) */
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+/* 1-Column Grid (Mobile) */
+.grid-1-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* 4-Column Grid (Stats) */
+.grid-4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  width: 100%;
+}
+
+/* Large Desktop: 1200px+ */
+@media (min-width: 1200px) {
+  .grid-3-cols { grid-template-columns: repeat(3, 1fr); gap: 2.5rem; }
+  .grid-2-cols { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+  .grid-4-cols { grid-template-columns: repeat(4, 1fr); gap: 3rem; }
+}
+
+/* Desktop: 981px to 1199px */
+@media (max-width: 1199px) and (min-width: 981px) {
+  .grid-3-cols { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .grid-2-cols { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+  .grid-4-cols { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+}
+
+/* Tablet: 768px to 980px */
+@media (max-width: 980px) and (min-width: 768px) {
+  .grid-3-cols { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+  .grid-2-cols { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+  .grid-4-cols { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+}
+
+/* Mobile: 481px to 767px */
+@media (max-width: 767px) and (min-width: 481px) {
+  .grid-3-cols { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .grid-2-cols { grid-template-columns: 1fr; gap: 1.5rem; }
+  .grid-4-cols { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+}
+
+/* Small Mobile: up to 480px */
+@media (max-width: 480px) {
+  .grid-3-cols { grid-template-columns: 1fr; gap: 1.25rem; }
+  .grid-2-cols { grid-template-columns: 1fr; gap: 1.25rem; }
+  .grid-4-cols { grid-template-columns: 1fr; gap: 1.25rem; }
+}
+
+/* Centered Container with max-width */
+.container-centered {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 4vw;
+}
+
+@media (max-width: 768px) {
+  .container-centered {
+    padding: 0 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-centered {
+    padding: 0 4vw;
+  }
+}
+
+/* Flex Grid for equal-width items */
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.flex-grid > * {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+@media (max-width: 768px) {
+  .flex-grid > * {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+}
+
+/* Spacing Utilities */
+.spacing-lg {
+  margin-bottom: 3rem;
+  gap: 3rem;
+}
+
+.spacing-md {
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.spacing-sm {
+  margin-bottom: 1.5rem;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .spacing-lg {
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+
+  .spacing-md {
+    margin-bottom: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .spacing-sm {
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+}

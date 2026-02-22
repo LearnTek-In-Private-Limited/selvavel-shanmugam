@@ -1,0 +1,9 @@
+.star-rating {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.star {
+  color: var(--color-accent);
+  font-size: 0.9rem;
+}

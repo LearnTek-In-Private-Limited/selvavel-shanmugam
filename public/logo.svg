@@ -1,0 +1,50 @@
+<svg viewBox="0 0 200 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="velGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Vel Icon -->
+  <g>
+    <!-- Pommel (base circle) -->
+    <circle cx="16" cy="50" r="4" fill="#8B6914"/>
+    <circle cx="16" cy="50" r="3.5" fill="url(#velGradient)"/>
+
+    <!-- Shaft with decorative rings -->
+    <rect x="14.5" y="20" width="3" height="30" fill="#8B6914"/>
+    <rect x="14" y="20" width="4" height="1.5" fill="#DAA520"/>
+    <rect x="14" y="25" width="4" height="1" fill="#DAA520"/>
+    <rect x="14" y="30" width="4" height="1" fill="#DAA520"/>
+    <rect x="14" y="35" width="4" height="1" fill="#DAA520"/>
+
+    <!-- Central spine of blade -->
+    <polygon points="16,8 17,20 15,20" fill="#8B6914"/>
+
+    <!-- Blade - diamond-shaped -->
+    <path d="M 16 8 L 24 16 L 16 20 L 8 16 Z" fill="#D4AF37"/>
+    <path d="M 16 8 L 24 16 L 16 20 L 8 16 Z" stroke="#8B6914" stroke-width="0.4" fill="none"/>
+
+    <!-- Central rib on blade -->
+    <line x1="16" y1="8" x2="16" y2="20" stroke="#8B6914" stroke-width="0.6"/>
+
+    <!-- Left guard wing -->
+    <path d="M 8 15 Q 4 17 2 18 Q 4 19 8 17 Z" fill="#D4AF37"/>
+    <path d="M 8 15 Q 4 17 2 18 Q 4 19 8 17 Z" stroke="#6B5810" stroke-width="0.3" fill="none"/>
+
+    <!-- Right guard wing -->
+    <path d="M 24 15 Q 28 17 30 18 Q 28 19 24 17 Z" fill="#D4AF37"/>
+    <path d="M 24 15 Q 28 17 30 18 Q 28 19 24 17 Z" stroke="#6B5810" stroke-width="0.3" fill="none"/>
+
+    <!-- Blade point accent -->
+    <polygon points="16,8 17,10 15,10" fill="#8B0000"/>
+  </g>
+
+  <!-- Text: Selvavel -->
+  <text x="40" y="45" font-family="'Sora', sans-serif" font-size="24" font-weight="700" fill="#070f79" letter-spacing="-0.5">Selvavel</text>
+
+  <!-- Decorative line under text -->
+  <line x1="40" y1="48" x2="200" y2="48" stroke="#f57c00" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+</svg>
